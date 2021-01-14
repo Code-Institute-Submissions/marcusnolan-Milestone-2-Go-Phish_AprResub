@@ -34,10 +34,10 @@ body{
 }
 
 .game-container {
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
-    margin: 50px;
     justify-content: center;
     perspective: 500px;
 }
@@ -71,12 +71,30 @@ body{
     transform: rotateY(0);
 }
 
+.card:hover .card-value {
+    animation: dance 2s linear infinite 500ms;
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: rotate();
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
 .card-back {
     background-color: red;
     border-color: #2980cc;
+    transform: rotateY(0);
 }
 
 .card-front {
+        background-color: red;
     border-color: #2980cc;
     transform: rotateY(180deg);
 }
@@ -89,6 +107,7 @@ body{
 }
 
 .card-value {
+    position: relative;
     align-self: flex-start;
     height: 100%;
     width: auto;
