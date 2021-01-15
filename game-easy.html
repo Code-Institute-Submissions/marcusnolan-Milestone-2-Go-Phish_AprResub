@@ -9,17 +9,31 @@
 </head>
 
 <body>
-    <h1 class="page-title">Go Phish</h1>
+    <h1 class="page-title">Go Phish</h1> 
+    <div class="overlay-text">
+        Click to start
+    </div>
+    <div class="overlay-text" id="game-over-text">
+        Game Over 
+        <span class="overlay-text-small">Click to restart.</span>
+    </div>
+    <div class="overlay-text" id="victory-text">
+        VICTORY!
+        <span class="overlay-text-small">Click to restart.</span>
+    </div>
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
-                Time <span id="time-remaining">100</span>
+                Time: <span id="time-remaining">100</span> 
             </div>
             <div class="game-info">
-                Flips <span id="flips">0</span>
+                Flips: <span id="flips">0</span>
             </div>
-        </div>
-        <div class="card visible">
+            <div class="game-info">
+                Level: <span>Easy</span>
+            </div>
+        </div> 
+        <div class="card">
             <div class="card-back card-face">
                 <img class="thief" src="./assets/images/go-phish-back.jpg" alt="Cyber Thief">
             </div>
@@ -35,7 +49,7 @@
                 <img class="card-value" src="./assets/images/go-phish-deceptive.jpg" alt="Cyber Thief">
             </div>
         </div>
-        <div class="card">
+        <div class="card"> 
             <div class="card-back card-face">
                 <img class="thief" src="./assets/images/go-phish-back.jpg" alt="Cyber Thief">
             </div>
