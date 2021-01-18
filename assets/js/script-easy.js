@@ -103,7 +103,7 @@ class GoPhish {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new GoPhish(100, cards);
+    let game = new GoPhish(40, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
