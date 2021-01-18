@@ -12,11 +12,24 @@ class GoPhish {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+
+        this.shuffleCards();
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
+
+            //if statement
+        }
+    }
+
+    shuffleCards() {
+        for(let i = this.cardsArray.length -1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i+1));
+            this.cardsArray[randIndex].style.order = i;
+            this.cardsArray[i].style.order = randIndex
         }
     }
 
