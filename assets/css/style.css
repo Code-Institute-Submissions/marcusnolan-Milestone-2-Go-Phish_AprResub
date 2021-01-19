@@ -8,7 +8,7 @@ html {
     min-height: 100vh;
 }
 
-body{
+.game-body{
     margin: 0;
     background: radial-gradient(#fff, #2D8DFF);
 }
@@ -167,4 +167,58 @@ body{
         flex-direction: column;
         align-items: center;
     }
+}
+
+.normal-body {
+    background-color: #2D8DFF;
+}
+
+.normal-body p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.about-card {
+    padding-bottom: 1px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-body h5 {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    color:#fff;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+#navbarLogo {
+    color:#EE2A30;
+    font-family: 'Bangers', cursive;
+}
+
+.nav-link {
+    color: #EE2A30;
+}
+
+.nav-link.active {
+    color: #2D8DFF;
+}
+
+.accordion {
+    color: #fff;
+}
+
+.accordion button {
+    color: #fff;
 }
