@@ -18,7 +18,8 @@ html {
     font-family: 'Bangers', cursive;
     font-weight: normal;
     text-align: center;
-    font-size: 6em;
+    font-size: 10vw;
+    display: inline;
 }
 
 .game-info-container {
@@ -159,16 +160,6 @@ html {
   transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .normal-body {
     background-color: #2D8DFF;
 }
@@ -198,8 +189,40 @@ h1 {
     padding-top: 20px;
 }
 
-.navbar {
+header {
+    width: 100%;
     background-color: #fff;
+}
+
+.page-logo img {
+    height: 100px;
+    width: auto;
+    position: top;
+}
+
+#header-logo {
+    vertical-align:middle; 
+    text-align:right;
+    align-items: right;
+    justify-content: right;
+}
+
+#header-title {
+    vertical-align:middle; 
+    text-align:left;
+    align-items: left;
+    justify-content: left;
+}
+
+.bg-light {
+    background-color: #fff!important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #navbarLogo {
@@ -207,12 +230,28 @@ h1 {
     font-family: 'Bangers', cursive;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: #EE2A30;
 }
 
-.nav-link.active {
+.dropdown-item {
+    color: #EE2A30;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
     color: #2D8DFF;
+}
+
+.dropdown-item.active {
+    color: #2D8DFF;
+}
+
+#menu-toggle {
+    color: #EE2A30;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #EE2A30;
 }
 
 .accordion {
@@ -221,4 +260,19 @@ h1 {
 
 .accordion button {
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-logo img {
+    height: 50px;
+    width: auto;
+    position: top;
+}
 }

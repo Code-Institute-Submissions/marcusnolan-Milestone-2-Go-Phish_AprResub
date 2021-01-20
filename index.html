@@ -8,42 +8,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <title>Go Phish Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Go Phish Home</title>
 </head>
 
 <body class="normal-body">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" id="navbarLogo">Go Phish</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span> 
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home / About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Play
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="game-easy.html">Easy</a></li>
-                                <li><a class="dropdown-item" href="game-medium.html">Medium</a></li>
-                                <li><a class="dropdown-item" href="game-hard.html">Hard</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="page-logo">
+        <div class="row">
+            <div class="col-5" id="header-logo">
+                <img src="./assets/images/cyber-thief-blue logo.png" alt="Go-Phish Logo">
             </div>
-        </nav>
+            <div class="col-7" id="header-title">
+                <h1 class="page-title">Go Phish</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" id="navbarLogo">Go Phish</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" id="menu-toggle"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home / About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Play
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="game-easy.html">Easy</a></li>
+                                    <li><a class="dropdown-item" href="game-medium.html">Medium</a></li>
+                                    <li><a class="dropdown-item" href="game-hard.html">Hard</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
     </header>
     <div class="about-intro">
         <div class="container">
@@ -76,7 +89,7 @@
                         <img src="./assets/images/go-phish-deceptive.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Deceptive Phishing</h5>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-6 col-md-4 col-lg-2">
@@ -84,7 +97,7 @@
                         <img src="./assets/images/go-phish-spear.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Spear Phishing</h5>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-6 col-md-4 col-lg-2">
@@ -92,7 +105,7 @@
                         <img src="./assets/images/go-phish-executive-fraud.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Executive Fraud</h5>
-                            </div>  
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-6 col-md-4 col-lg-2">
@@ -100,7 +113,7 @@
                         <img src="./assets/images/go-phish-vishing.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Vishing</h5>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-6 col-md-4 col-lg-2">
@@ -108,7 +121,7 @@
                         <img src="./assets/images/go-phish-smishing.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Smishing</h5>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-6 col-md-4 col-lg-2">
@@ -116,7 +129,7 @@
                         <img src="./assets/images/go-phish-pharming.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Pharming</h5>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,8 +194,10 @@
                                 <p>Spear phishers can target anyone in an organization, even executives. That’s the
                                     logic behind a “whaling” attack. In these scams, fraudsters try to harpoon an exec
                                     and steal their login details.</p>
-                                <p>In the event their attack proves successful, fraudsters can choose to conduct executive
-                                    fraud. As the second phase of a business email compromise (BEC) scam, executive fraud is
+                                <p>In the event their attack proves successful, fraudsters can choose to conduct
+                                    executive
+                                    fraud. As the second phase of a business email compromise (BEC) scam, executive
+                                    fraud is
                                     when attackers abuse the compromised email account of a CEO or other high-ranking
                                     executive to authorize fraudulent wire transfers to a financial institution of their
                                     choice. Alternatively, they can leverage that same email account to conduct W-2
