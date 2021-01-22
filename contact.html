@@ -68,7 +68,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5 col-xl-4">
-                        <form onsubmit="return sendMail(this);" method="POST">
+                        <form onsubmit="return sendMail(this);">
                             <div class="form-group"> 
                                 <label for="ContactInputName">Full Name</label>
                                 <input type="text" class="form-control" id="ContactInputName" required name="name"/>
@@ -82,10 +82,10 @@
                                 <label class="my-1 mr-2" for="ContactInputEnquiryType">Difficulty Level</label>
                                 <select class="form-select my-1 mr-sm-2" id="ContactInputEnquiryType" name="difficulty">
                                     <option selected value="">Please choose...</option>
-                                    <option value="1">Easy</option>
-                                    <option value="2">Medium</option>
-                                    <option value="3">Hard</option>
-                                    <option value="3">None of the above</option>
+                                    <option value="Easy">Easy</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Hard">Hard</option>
+                                    <option value="None of the above">None of the above</option>
                                 </select> 
                             </div>
                             <div class="form-group">

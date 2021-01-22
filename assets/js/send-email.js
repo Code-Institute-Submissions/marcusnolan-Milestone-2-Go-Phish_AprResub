@@ -5,7 +5,7 @@ function sendMail(contactForm) {
         "go_phish_level": contactForm.difficulty.value,
         "message": contactForm.message.value
     })
-    .this(
+    .then(
         function(response) {
             console.log("success", response);
         },
@@ -14,5 +14,3 @@ function sendMail(contactForm) {
         });
         return false;
 }
-
-console.log("Hello");
