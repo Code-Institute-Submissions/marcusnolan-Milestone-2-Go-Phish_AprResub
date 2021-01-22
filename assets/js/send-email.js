@@ -1,3 +1,4 @@
+// Code below written by me from 'sending emails using EmailJS' module in interactive front-end dev
 function sendMail(contactForm) {
     emailjs.send("service_oev3go2","go-phish", {
         "from_name": contactForm.name.value,
@@ -14,3 +15,9 @@ function sendMail(contactForm) {
         });
         return false;
 }
+
+// Code below created with help of w3schools
+
+$("form").submit(function(){
+  alert("Submitted! Thank you for your valued feedback. One of the 'Go Phish' team will be in touch soon. ");
+});
