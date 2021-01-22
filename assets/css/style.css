@@ -212,6 +212,7 @@ header {
     text-align:left;
     align-items: left;
     justify-content: left;
+    font-size: 100%;
 }
 
 .bg-light {
