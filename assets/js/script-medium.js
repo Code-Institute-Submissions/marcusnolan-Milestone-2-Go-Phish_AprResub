@@ -87,12 +87,6 @@ class GoPhish {
         document.getElementById('victory-text').classList.add('visible');
     }
 
-    // test script for shuffle difficulty
-    midGameShuffle() {
-        if (totalClicks === 10)
-            shuffleCards;
-    }
-
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i+1));

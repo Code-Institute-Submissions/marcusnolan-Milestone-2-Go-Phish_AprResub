@@ -9,7 +9,7 @@ html {
 }
 
 .game-body{
-    margin: 0;
+    padding: 10px 0 25px 0;
     background: radial-gradient(#fff, #2D8DFF);
 }
 
@@ -30,12 +30,12 @@ html {
 
 .game-info {
     color: #EE2A30;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
 }
 
 .game-container {
-    margin: 50px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -47,6 +47,8 @@ html {
     position: relative;
     height: 175px;
     width: 125px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0px;
 }
 
 .card-face {
@@ -62,6 +64,7 @@ html {
     border-width: 2px;
     border-style: solid;
     transition: transform 500ms ease-in-out;
+    
 }
 
 .card.visible .card-back {
@@ -89,11 +92,10 @@ html {
     color: #EE2A30;
     font-family: 'Bangers', cursive;
     text-align: center;
-    font-size: 40px;
 }
 
 .overlay-text-small {
-    font-size: 1.5em;
+    font-size: 30px;
 }
 
 .overlay-text.visible {
@@ -109,7 +111,7 @@ html {
     }
     to {
         background-color: rgba(0, 0, 0, 0.8);
-        font-size: 10em;
+        font-size: 5em;
     }
 }
 
