@@ -6,11 +6,15 @@
 
 html {
     min-height: 100vh;
+    background: radial-gradient(rgb(170, 208, 255), #2D8DFF);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .game-body{
     padding: 10px 0 25px 0;
-    background: radial-gradient(#fff, #2D8DFF);
 }
 
 .page-title {
@@ -18,7 +22,7 @@ html {
     font-family: 'Bangers', cursive;
     font-weight: normal;
     text-align: center;
-    font-size: 10vw;
+    font-size: 100px;
     display: inline;
 }
 
@@ -41,6 +45,8 @@ html {
     grid-gap: 10px;
     justify-content: center;
     perspective: 500px;
+        background-color: rgba(0, 0, 0, 0);
+
 }
 
 .card {
@@ -162,10 +168,6 @@ html {
   transform: scale(1.1);
 }
 
-.normal-body {
-    background-color: #2D8DFF;
-}
-
 .normal-body p {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -188,7 +190,6 @@ h1 {
     color:#fff;
     font-family: 'Bangers', cursive;
     text-align: center;
-    padding-top: 20px;
 }
 
 header {
@@ -199,13 +200,12 @@ header {
 .page-logo img {
     height: 100px;
     width: auto;
-    position: top;
+    padding-right: 10px;
 }
 
 #header-logo {
     vertical-align:middle; 
     text-align:right;
-    align-items: right;
     justify-content: right;
 }
 
@@ -215,6 +215,7 @@ header {
     align-items: left;
     justify-content: left;
     font-size: 100%;
+    padding-left: 0;
 }
 
 .bg-light {
@@ -257,27 +258,17 @@ header {
     border-color: #EE2A30;
 }
 
+cite a {
+    margin-bottom: 20px;
+    color: rgb(147, 196, 255);
+}
+
 .accordion {
     color: #fff;
 }
 
 .accordion button {
     color: #fff;
-}
-
-@media (max-width: 600px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .page-logo img {
-    height: 50px;
-    width: auto;
-    position: top;
-}
 }
 
 .submit-btn{
@@ -292,7 +283,7 @@ header {
 }
 
 form{
-    background-color: rgba(41, 128, 204, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 5px 0px #ffffff;
     padding: 25px 25px 25px;
     margin: 25px 0 25px 0;
@@ -304,3 +295,37 @@ form{
 .form-group {
     margin-bottom: 15px;
 }
+
+.text-muted {
+    color: #EE2A30!important;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-logo img {
+        height: 50px;
+        width: auto;
+        position: top;
+    }
+    .page-title {
+        font-size: 50px;
+    }
+}
+
+/* @media (min-width: 1100px) {
+    .page-title {
+        font-size: 7.5vw;
+    }
+}
+
+@media (min-width: 1100px) {
+    .page-title {
+        font-size: 7.5vw;
+    }
+} */
