@@ -16,7 +16,7 @@ function sendMail(contactForm) {
         return false;
 }
 
-// Code below created with help of w3schools
+// Code below written by me to create alert when form has been submitted
 
 $("form").submit(function(){
   alert("Submitted! Thank you for your valued feedback. One of the 'Go Phish' team will be in touch soon. ");
