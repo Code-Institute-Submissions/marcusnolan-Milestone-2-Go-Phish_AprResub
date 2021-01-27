@@ -60,54 +60,64 @@
                                     <a class="nav-link active" href="contact.html">Contact</a>
                                 </li>
                             </ul>
+                            <span class="navbar-text">
+                                Educate yourself on cybercrime while testing your memory!
+                            </span>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h1>Contact Us</h1>
-                </div>
-                <div class="col-md-6 col-lg-5 col-xl-4">
-                        <form onsubmit="return sendMail(this);">
-                            <div class="form-group"> 
-                                <label for="ContactInputName">Full Name</label>
-                                <input type="text" class="form-control" id="ContactInputName" required name="name"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="ContactInputEmail">Email address</label>
-                                <input type="email" class="form-control" id="ContactInputEmail" aria-describedby="emailHelp" required name="emailaddress"/>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label class="my-1 mr-2" for="ContactInputEnquiryType">Difficulty Level</label>
-                                <select class="form-select my-1 mr-sm-2" id="ContactInputEnquiryType" name="difficulty">
-                                    <option selected value="">Please choose...</option>
-                                    <option value="Easy">Easy</option>
-                                    <option value="Medium">Medium</option>
-                                    <option value="Hard">Hard</option>
-                                    <option value="Impossible">Impossible</option>
-                                    <option value="None of the above">None of the above</option>
-                                </select> 
-                            </div>
-                            <div class="form-group">
-                                <label for="ContactInputMessage">Your Message</label>
-                                <textarea class="form-control" id="ContactInputMessage" rows="3" required name="message"></textarea>
-                            </div>
-                            <div class="submit-button">
-                                <button type="submit" class="btn btn-outline-primary submit-btn" onclick="index.html">Submit</button> 
-                            </div>
-                        </form>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <form onsubmit="return sendMail(this);">
+                    <div class="form-group">
+                        <label for="ContactInputName">Full Name</label>
+                        <input type="text" class="form-control" id="ContactInputName" required name="name" />
                     </div>
-                    <div class="col-md-6 col-lg-5 col-xl-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577385.757186884!2d0.9411700795673733!3d55.93114270358571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649bb00f9e4bfe5%3A0xf813475a8b6920f3!2sGo-Fish!5e0!3m2!1sen!2sie!4v1611671325846!5m2!1sen!2sie" width="100%" height="480" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="form-group">
+                        <label for="ContactInputEmail">Email address</label>
+                        <input type="email" class="form-control" id="ContactInputEmail" aria-describedby="emailHelp"
+                            required name="emailaddress" />
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
                     </div>
+                    <div class="form-group">
+                        <label class="my-1 mr-2" for="ContactInputEnquiryType">Difficulty Level</label>
+                        <select class="form-select my-1 mr-sm-2" id="ContactInputEnquiryType" name="difficulty">
+                            <option selected value="">Please choose...</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                            <option value="Impossible">Impossible</option>
+                            <option value="None of the above">None of the above</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ContactInputMessage">Your Message</label>
+                        <textarea class="form-control" id="ContactInputMessage" rows="3" required
+                            name="message"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="btn btn-outline-primary submit-btn"
+                            onclick="index.html">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4577385.757186884!2d0.9411700795673733!3d55.93114270358571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649bb00f9e4bfe5%3A0xf813475a8b6920f3!2sGo-Fish!5e0!3m2!1sen!2sie!4v1611671325846!5m2!1sen!2sie"
+                    width="100%" height="480" frameborder="0" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
         </div>
-<script src="./assets/js/send-email.js"></script>
+    </div>
+    <script src="./assets/js/general-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>

@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 100px;
 }
 
 .game-body{
@@ -30,11 +31,12 @@ body {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
+    margin: 20px 0 20px 0;
 }
 
 .game-info {
     color: #EE2A30;
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,7 +47,7 @@ body {
     grid-gap: 10px;
     justify-content: center;
     perspective: 500px;
-        background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
@@ -189,7 +191,7 @@ h1 {
     color:#fff;
     font-family: 'Bangers', cursive;
     text-align: center;
-    margin-top: 20px;
+    margin: 30px 0 20px 0;
 }
 
 header {
@@ -258,6 +260,17 @@ header {
     border-color: #EE2A30;
 }
 
+#navbarSupportedContent span {
+        font-family: 'Montserrat', sans-serif;
+        color: #2D8DFF;
+    }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 cite a {
     margin-bottom: 20px;
     color: rgb(147, 196, 255);
@@ -270,13 +283,12 @@ cite a {
     align-items: center;
 }
 
-.accordion {
-    color: #fff;
+h3 {
+    color:#fff;
+    font-family: 'Bangers', cursive;
+    margin-top: 20px;
 }
 
-.accordion button {
-    color: #fff;
-}
 
 .submit-btn{
     background-color: #ffffff;
@@ -326,5 +338,11 @@ iframe {
     }
     .page-title {
         font-size: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    #navbarSupportedContent span {
+        display: none;
     }
 }
