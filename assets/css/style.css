@@ -263,6 +263,13 @@ cite a {
     color: rgb(147, 196, 255);
 }
 
+.card-body {
+    min-height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .accordion {
     color: #fff;
 }
