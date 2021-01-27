@@ -187,6 +187,15 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover h5 {
+    color: #EE2A30;
+}
+
+
 h1 {
     color:#fff;
     font-family: 'Bangers', cursive;
