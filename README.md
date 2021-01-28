@@ -53,35 +53,34 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 ### design
 
 - #### Colour Scheme
-    - As this site was based more on functionality, a contasting colour scheme was needed while portraying a light hearted and enjoyable feeling to align with Ian's style of teaching and personality. 
-    The colours chosen were Strong Blue (#2980CC), Dark Grey (#737373) and White (#FFF).  
-    <img src="./assets/images/readme/ian-kearney-coaching-colour-palette.png" height="100px"/>
+    - As a game, a contasting colour scheme was needed while portraying fun and enjoyable feeling. 
+    The colours chosen were Strong Blue (#2980CC), Bright Red (#EE2A30) and White (#FFF).  
+    <img src="./assets/images/readme/go-phish-colour-palette.png" height="100px"/>
 
 - #### Typography
-    - The main font used is a sans-serif type of font 'Lato' with sans-serif as a fallback font. This font is easy to read as it's not decorated and fits in well with full width shapes and div's as it is a somewhat narrow font.
+    - The font used for the title, logo and headings is Bangers which is a cursive font. This font gives a very fun comic book/game feel and is perfect for the site.
 
-        <img src="./assets/images/readme/ian-kearney-coaching-lato-font.png" height="30px" />
+        <img src="./assets/images/readme/bangers-font.png" height="30px" />
 
-    - The secondary font used for the nav-bar is 'Oswald' with sans-serif as a fallback.
+    - The font used for the paragraphs, game info and navigation is Montserrat. It is part of the Sans-Serif family and is very legible while also informal enough to be used for a game. 
 
-        <img src="./assets/images/readme/ian-kearney-coaching-oswald-font.png" height="30px" />
-
-    - The font used for Ian's Signature is 'Euphoria-script' with sans-serif as a fallback. 
-
-        <img src="./assets/images/readme/ian-kearney-coaching-euphoria-script-font.png" height="30px" />
+        <img src="./assets/images/readme/montserrat-font.png" height="30px" />
 
 
 - #### Imagery
-    - Images on this website are a combonation of both Images of/from Ian Kearney himself and from unsplash where you can access royalty free images. Images on this site are used to convey Ian's top level coaching history and also the caliber of playing he is used to. They are also used as a banner for each page. 
-
+    - The logo was bought off <a href="https://www.vectorstock.com/royalty-free-vector/thief-hacking-a-computer-icon-cyber-attack-vector-21584120?refer=eml">Vector stock</a> and I made a few tweaks using Adobe Photoshop. 
+    - The Cartoon fish used was downloaded off <a href="https://webstockreview.net/pict/getfirst">Web Stock Review</a> and all edits were made by me using Adobe Photoshop. 
 - #### Wireframes/Mockups
-    - Wireframes and moclups were created using Balsamiq Wireframes. Both mobile and desktop versions are in the same image for each page linked below;
+    - Wireframes and mockups were created using Adobe XD. Both mobile and desktop versions are linked below;
         
-        - <a href="https://github.com/marcusnolan/MS1-Ian-Kerney-Coaching/blob/9e49ffa887a6fd0447a17b40668ee8ffed77a22e/assets/mockups/index.html.png"> Home & About</a>
-        - <a href="https://github.com/marcusnolan/MS1-Ian-Kerney-Coaching/blob/9e49ffa887a6fd0447a17b40668ee8ffed77a22e/assets/mockups/testimonials.html.png"> Testimonials</a>
-        - <a href="https://github.com/marcusnolan/MS1-Ian-Kerney-Coaching/blob/9e49ffa887a6fd0447a17b40668ee8ffed77a22e/assets/mockups/pricing.html.png"> Pricing</a>
-        - <a href="https://github.com/marcusnolan/MS1-Ian-Kerney-Coaching/blob/9e49ffa887a6fd0447a17b40668ee8ffed77a22e/assets/mockups/book-a-lesson.html.png"> Book A Lesson</a>
-        - <a href="https://github.com/marcusnolan/MS1-Ian-Kerney-Coaching/blob/9e49ffa887a6fd0447a17b40668ee8ffed77a22e/assets/mockups/contact.html.png"> Contact Me</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-index-wireframe.png"> Home & About</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-index-wireframe-mobile.png"> Home & About - Mobile</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-game-wireframe.png"> Game</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-game-wireframe-mobile.png"> Game - Mobile</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-how-to-play-wireframe.png"> How To Play</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-how-to-play-wireframe-mobile.png"> How To Play - Mobile</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-contact-wireframe.png"> Contact</a>
+        - <a href="./assets/images/readme/wireframes/go-phish-contact-wireframe-mobile.png"> Contact - Mobile</a>
 
 
 ## Features
