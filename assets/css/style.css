@@ -280,6 +280,15 @@ header {
   width: 100%
 }
 
+.play-btn {
+    text-align: center;
+}
+
+.play-btn button {
+    min-width: 104px;
+    margin-bottom: 4px;
+}
+
 cite a {
     margin-bottom: 20px;
     color: rgb(147, 196, 255);
