@@ -1,13 +1,12 @@
 <h1 align="center">Go Phish</h1>
-<h1 align="center"><img src="./assets/images/readme/am-i-responsive-ian-kearney-coaching.png" /></h1>
+<h1 align="center"><img src="./assets/images/readme/go-phish-mock1.png"/></h1>
 
-<a href="https://marcusnolan.github.io/MS1-Ian-Kearney-Coaching/"><img src="./assets/images/logos/ikc-logo-blue.jpg" width="25px"/> : Ian Kearney Coaching Live Website</a>
+<a href="https://marcusnolan.github.io/Milestone-2-Go-Phish/"><img src="./assets/images/cyber-thief-blue logo.png" width="25px"/> : Go Phish Live Website</a>
 
-<a href="https://github.com/marcusnolan/MS1-Ian-Kearney-Coaching/"><img src="./assets/images/logos/github-logo.png" width="25px"/> : Ian Kearney Coaching Github Repository</a>
+<a href="https://github.com/marcusnolan/Milestone-2-Go-Phish"><img src="./assets/images/readme/github-logo.png" width="25px"/> : Go Phish Github Repository</a>
 
 ## About
-The Ian Kearney Coaching website was created to help golfers in the southwest of Ireland easily contact, book and learn about lessons with top class teaching professional, Ian Kearney. Previously, golfers would have to ring or email just to get a call back on information about lessons, let alone actually booking them. This also provides a contact free way of enquiring which in these modern days is a necessity. 
-
+Go Phish is a card memory game created to educate people about the ongoing threat of cybercrime, specifically Phishing while also letting them test their memory and have some fun. It consists of a 12 card deck with 6 pairs of 2 cards within. Each pair represents a form of phishing with a small logo designed to potray it. I hope you enjoy playing!
 
 ## Table of Contents
 **[User Experience](#user-experience)** 
@@ -24,22 +23,31 @@ The Ian Kearney Coaching website was created to help golfers in the southwest of
 
 **[Credits](#credits)**
 
+<img src="./assets/images/readme/go-phish-mock2.jpg"/>
+
 ## User Experience
 
 ### User Stories
-- #### As a golfer looking to improve the quality of my game with the help af a teaching professional for the first time;
-    1. I want to easily understand the purpose and the layout of the site without additional instructions needed.
+- #### As a general user;
+    1. I want to be informed about phishing and the various types of phishing.
     1. I want to intuitively navigate through the site to browse the content.
-    1. I want to enjoy the design and for it to add to the overall feel of professionalism and quality.
-    1. I want to learn about my potential new coach and his career in teaching.
-    1. I want to find a variety of lesson options to target specific areas of my game.
-- #### As a golfer who is looking for new ways to improve, such as someone who has gotten lessons from teaching professionals before and feels it is time to learn from a new coach;
-    1. I want to explore why Ian Kearney is the next coach for me and what his previous clients have said about him in testimonials.
-    1. I want to feel like Ian Kearney understands what he is talking about and has extensive knowledge in coaching.
-    1. I want to be able to digest the pricing structure easily and compare it to previous coaches. 
-- #### As a visitor who has already visited this website and is returning to book a second or third lesson;
-    1. I want to be able to use the website on any device so I can keep it handy.
-    1. I want to use the navigation at all times and have it readily available so I can quickly navigate from one page to another.
+    1. I want to enjoy the design and for it to add to the overall feel of a game.
+    1. I want to learn how to play the game with ease.
+    1. I want to find a variety of difficulties to test my memory.
+    1. I want be able to keep track of the amount of flips it has taken me to complete the game.
+    1. see how long it has taken me to complete the game.
+- #### As a casual player;
+    1. I want to have fun when playing go phish.
+    1. I want the game itslef to be easy to comprehened and play.
+    1. I want to be able to casually flip between levels and pages with simple to use navigation.  
+- #### As an experienced gamer;
+    1. I want to be able to test my abilities with a variety of difficulties.
+    1. I want to be encouraged to play again and again.
+- #### As the game developer;
+    1. I want to educate people while also ensuring they enjoy the game and have fun.
+    1. I want to provide very easy to use navigation and game controls.    
+    1. I want to have a light hearted and colourful design for players to enjoy.
+
 
 
 ### design
