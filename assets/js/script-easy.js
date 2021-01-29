@@ -100,6 +100,14 @@ class GoPhish {
     }
 }
 
+
+let difficulty = (document.getElementById('difficulty').textContent);
+
+if (difficulty === 'Easy'){
+        console.log('Hooray!')
+    }
+
+
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));

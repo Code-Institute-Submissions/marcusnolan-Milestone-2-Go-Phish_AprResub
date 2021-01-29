@@ -91,53 +91,38 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 - **Header** - allows user to easily navigate across all pages
     - Navigation is included in the header to let the user intuitively locate it.
     - Navigation links chnage colour when hovered over. This lets the visitor know that it is clickable.
-    - The navigation link, matching the page that the user is visiting, stays underlined to let the user quickly establish which page she/he is visiting.
-    - Pages that have already been visited in the navigation slightly change to a darker color to let users know what pages they have already visited. 
-    - Navigation links collapse in a personalized hamburger menu when viewed in mobile sizes.
-    - Colors have been chosen with optimum contrast in mind to be pleasant to the eye.
-- **Page Banner Images**
-    - Banners for all pages have been styled in the same manner which gives the user a feeling of cohesion and familiarity.
-    - The image is stuck to the top of the page so that it is easier to read the text below rather than having it fixed and causing potential issues with legibility.
-    - The Banner text is responsive depending on the viewport width to avoid overspilling.
+    - The navigation link, matching the page that the user is visiting, changes colour to let the user quickly establish which page she/he is visiting.
+    - Navigation links collapse in a personalized hamburger menu when viewed in mobile/tablet sizes.
+    - Colors have been chosen with optimum contrast in mind to be pleasant to the eye and legible.
 - **Accessibility**
-    - All Pages have a description in case the image link breaks as well as helps screen readers.
+    - All images have a description in case the image link breaks as well as helping screen readers.
     - The hamburger menu has aria-label added to let users with screen readers know where the toggleable menu is.
-    - (WAI ARIA used whenever appropriate as an indication to the screen readers when something is or is not accessible)
 - **Buttons**
-    - All buttons are styled in the same way to provide consistency across the page. When hovering over a button, the text will change to a darker color in a similar fashion to the navigation bar to give the user a clear understanding that it is clickable.
+    - All buttons are styled in a similar way to provide consistency across the page. When hovering over a button, the text will change color in a similar fashion to the navigation bar to give the user a clear understanding that it is clickable.
 - **Responsiveness**
     - All Pages are responsive and provide the same functionality regardless of the viewport size and device brand/orientation.
-- **Footer**
-    - The Footer has been designed to be at the bottom of the page, regardless of the amount of content. This aids the overall user experience.
-    - A logo carousel has been placed in the footer to let users know Ian's qualifications and premium partners.
-    - As a main feature of the website, an ability to go to the contact page felt necessary to have in the footer for ease and speed. 
-    - Social links have been grouped together to signify their connection when hovered over, change in color. Please excuse the fact that the social links currently go to the channels home pages as Ian has not set them up yet.
 
 
 ### Specific to Pages
 - **Home & About**
-    - A carousel of images that is responsive and changes dimensions depending on the viewport size is set as the banner-image of the home page to give users a further understanding of the page without having to scroll or read.
-    - A short quote from Ian about his philosophy to golf coaching to let the user know what the purpose of the page is.
-    - A summary of Ian's Early career and coaching career give a very simple yet effective introduction to the website and indeed Ian.
-- **Testimonials**
-    - Five testimonials from some of Ian's clients over the years.
-    - A small line to say how each person has improved during their time with Ian by showing how their golfing handicaps have dropped.
-    - An avatar for each person was added to give the page a more personal feel. 
-- **Pricing**
-    - Four boxes are used to outline the different lesson options and their prices. Obviously the main feature of any pricing page is indeed the price itself which is highlighted using a different colour and font weight compared to the other text on the page.
-- **Book A Lesson**
-    - The booking form features simple text, email, phone number, select and date input fields. 
-    - It offers users the chance to chose a time of lesson to suit they're day to day lives. 
-- **Contact Me**
-    - Another form using input fields to gather contact details off a user while also dividing their query into different categories and offering them the chance to explain the query with a text box. 
-    - The address and contact details of the academy where Ian teaches out of was also added to avoid users having to fill out a form to get the directions each time they have a lesson for example. 
+    - Buttons to play all 4 game difficulties on top of the easy to use navigation bar make it incredibly obvious and simple to play the game. 
+    - A small summary of what is phishing followed by a deck explaining the different types of phishing, featuring all 6 cards that players will see during the game. 
+    - Each card in the deck is clickable and will bring the user to the section of which type of phishing they are looking at below. 
+- **Play**
+    - The game pages themself are kept simple to let the user focus on their progress and playing experience. 
+    - There is a game-info section that contains the time remaining, flips and level. 
+    Below the game info is the game itself. 3 rows of 4 cards on desktop and tablet and 6 rows of 2 cards on mobile. 
+- **How To Play**
+    - A simple paragraph explaining the game and how a user can actually play it is all that is needed for the how to play page. Any user that clicks on How To Play knows xactly what they are looking for and what they should expect. 
+- **Contact**
+    - Another form using input fields to gather contact details off a user while categorizing which level they are querying and a small text box to receive their message. 
+    - Google Maps was added with a funny/false location of a fish market in Denmark with the name "Go Fish".
 
 
     ### Future Features
  
-- In the future, I would like to implement a calendar feature where you can see exactly what availability Ian has without having to contact him. Using a software such as calendly would do. 
-- Integrate a payment system using strype to maintain as little physical contact as possible and ease of operating for Ian Kearney. 
-- An opportunity for Ian's clients to leave a testimonial to be added to the website and/or a comment section beneath each testimonial. 
+    - In the future, I would like to implement a leaderboard where users can proudly show their scores on a live leaderboard viewable to everyone. 
+    - I would also like to add a shuffl function after a certain amount of clicks. 
 
 
 ## Technologies Used
