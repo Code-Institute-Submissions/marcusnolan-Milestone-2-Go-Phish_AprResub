@@ -103,7 +103,17 @@ class GoPhish {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new GoPhish(15, cards);
+    let difficulty = (document.getElementById('difficulty').textContent);
+    let game;
+        if (difficulty === 'Easy'){
+        game = new GoPhish(40, cards);
+    }else if (difficulty === 'Medium'){
+        game = new GoPhish(20, cards);
+    }else if (difficulty === 'Hard'){
+        game = new GoPhish(15, cards);
+    }else if (difficulty === 'Impossible'){
+        game = new GoPhish(10, cards);
+    }
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
