@@ -171,13 +171,13 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     </a> 
 
 ### HTML5 validator
-- Home & About - Pass 
-- Game Easy - Pass 
-- Game Medium - Pass 
-- Game Hard - Pass 
-- Game Impossible - Pass 
-- How To Play - Pass
-- Contact - Pass
+- Home & About - No errors or warnings 
+- Game Easy - No errors or warnings  
+- Game Medium - No errors or warnings  
+- Game Hard - No errors or warnings  
+- Game Impossible - No errors or warnings  
+- How To Play - No errors or warnings 
+- Contact - No errors or warnings 
 
 ### Usability Testing
 - To test the ease of navigation, legibility, layout of content etc, this website was shared with few friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating or ease of reading or viewing content the website.
@@ -197,19 +197,20 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 
 ### Performance Testing
 - Overall WebPage Performance Test was done using [WebPageTest](https://www.webpagetest.org/) with test location set to Dulles, USA and test browser set to Chrome. Some areas of improvement according to this website are Security of the site, image compression and Cache Static Content.
-    - Home & About - [Results](https://www.webpagetest.org/result/201110_DiHE_a280e61339f04cb6664646649202f1e6/)
-    - Testimonials - [Results](https://www.webpagetest.org/result/201110_DiQE_fb74c405b4d87ab3e96f9254d41c80e0/)
-    - Pricing - [Results](https://www.webpagetest.org/result/201110_Di25_d8f1171e7fc39a784c261eba56e79e4b/)
-    - Book A Lesson - [Results](https://www.webpagetest.org/result/201110_DiH7_54f39ae4fc8c5ed3e4e90f6814f53ab5/)
-    - Contact Me - [Results](https://www.webpagetest.org/result/201110_DiSC_2cf9d1a7f789f8d36a1489b65a1dd899/)
-
+    - Home & About - [Results](https://www.webpagetest.org/result/210201_Di1X_a89fe7e604cf33dcf9a88c370eb1c872/)
+    - Game Easy - [Results](https://www.webpagetest.org/result/210201_DiM9_e82cb0ad30cc29af601dc971f8cdc306/)
+    - Game Medium - [Results](https://www.webpagetest.org/result/210201_DiWV_a8ab15ae2efb8cc0c713f9e5ceb650c8/)
+    - Game Hard - [Results](https://www.webpagetest.org/result/210201_DiW7_3792159c73f6e5bbea65ebb74ef7f10a/)
+    - Game Impossible - [Results](https://www.webpagetest.org/result/210201_DiTK_bb223410c1803734a6b57215a1089313/)
+    - How To Play - [Results](https://www.webpagetest.org/result/210201_DiR2_992a1e3c5837f5ac20f2512024dcdf66/)
+    - Contact - [Results](https://www.webpagetest.org/result/210201_DiET_ad8f21d8c7c907e48e93e72867be5f35/)
 
 ## Deployment 
 
 ### Publishing the site
 This website was published using [GitHub Pages](https://pages.github.com/). The procedure is outlined below.
 1. Go to the GitHub website and log in.
-2. On the left-hand side, you'll see all your repositories, select the appropriate one. ([Repository](https://github.com/marcusnolan/MS1-Ian-Kearney-Coaching) used for this project).
+2. On the left-hand side, you'll see all your repositories, select the appropriate one. ([Repository](https://github.com/marcusnolan/Milestone-2-Go-Phish) used for this project).
 3. Under the name of your chosen Repository you will see a ribbon of selections, click on 'Settings' located on the right hand side.
 4. Scroll down till you see 'GitHub Pages' heading.
 5. Under the 'Source' click on the dropdown and select 'master branch' then under the next dropdown select '/docs' followed by pressing save.
@@ -220,16 +221,17 @@ This website was published using [GitHub Pages](https://pages.github.com/). The 
 ### Cloning 
 If you wish to clone or download this repository to your local device you can follow the procedure outlined below.
 1. Go to the GitHub website and log in.
-2. Locate the [Repository](https://github.com/marcusnolan/MS1-Ian-Kearney-Coaching) used for this project.
+2. Locate the [Repository](https://github.com/marcusnolan/Milestone-2-Go-Phish) used for this project.
 3. Under the Repository name locate 'the 'code' button which is to the left of the 'gitpod' button in green.
 4. To clone the repository using HTTPS click the link under Clone  "HTTPS".
 5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
 6. Type `Git Clone` and paste the URL you copied from the GitHub.
 7. To create your local clone press `Enter`
 
-## Known Bugs
-
-There are no identified bugs currently.
+## Bugs
+### Fixed Bugs
+- While building the game with help from a different tutorial, I encountered a few bugs with the shuffle function and cards flipping correctly so I decided to go a completely different method and changed my shuffle function to the Fisher-Yates algorithm. 
+- 
 
 ## Credits
 

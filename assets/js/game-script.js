@@ -29,31 +29,31 @@ class GoPhish {
         });
     }
     flipCard(card) {
-        if(this.canFlipCard(card)) {
+        if (this.canFlipCard(card)) {
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
 
-            if(this.cardToCheck)
+            if (this.cardToCheck)
                 this.checkForCardMatch(card);
-                else
-                    this.cardToCheck = card;
+            else
+                this.cardToCheck = card;
         }
     }
     checkForCardMatch(card) {
-        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
-                this.cardMatch(card, this.cardToCheck);
-            else
-                this.cardMisMatch(card, this.cardToCheck);
+        if (this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else
+            this.cardMisMatch(card, this.cardToCheck);
 
-            this.cardToCheck = null;
+        this.cardToCheck = null;
     }
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
         card1.classList.add('matched');
         card2.classList.add('matched');
-        if(this.matchedCards.length === this.cardsArray.length)
+        if (this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
     cardMisMatch(card1, card2) {
@@ -73,7 +73,7 @@ class GoPhish {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
+            if (this.timeRemaining === 0)
                 this.gameOver();
         }, 1000);
     }
@@ -88,8 +88,8 @@ class GoPhish {
     }
 
     shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * (i+1));
+        for (let i = this.cardsArray.length - 1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i + 1));
             this.cardsArray[randIndex].style.order = i;
             this.cardsArray[i].style.order = randIndex;
         }
@@ -105,13 +105,13 @@ function ready() {
     let cards = Array.from(document.getElementsByClassName('card'));
     let difficulty = (document.getElementById('difficulty').textContent);
     let game;
-        if (difficulty === 'Easy'){
+    if (difficulty === 'Easy') {
         game = new GoPhish(40, cards);
-    }else if (difficulty === 'Medium'){
+    } else if (difficulty === 'Medium') {
         game = new GoPhish(20, cards);
-    }else if (difficulty === 'Hard'){
+    } else if (difficulty === 'Hard') {
         game = new GoPhish(15, cards);
-    }else if (difficulty === 'Impossible'){
+    } else if (difficulty === 'Impossible') {
         game = new GoPhish(10, cards);
     }
 
@@ -123,12 +123,12 @@ function ready() {
     });
     cards.forEach(card => {
         card.addEventListener('click', () => {
-        game.flipCard(card);
+            game.flipCard(card);
         });
     });
 }
 
-if(document.readyState === 'loading') {
+if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else {
     ready();
