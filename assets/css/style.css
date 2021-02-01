@@ -1,164 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    min-height: 100vh;
-    background: radial-gradient(rgb(170, 208, 255), #2D8DFF);
+  min-height: 100vh;
+  background: radial-gradient(rgb(170, 208, 255), #2D8DFF);
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0);
-    margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 100px;
 }
 
-.game-body{
-    padding: 10px 0 25px 0;
+.game-body {
+  padding: 10px 0 25px 0;
 }
 
+/* ---------- Below is all styling for any elements within the header ---------- */
 .page-title {
-    color:#EE2A30;
-    font-family: 'Bangers', cursive;
-    font-weight: normal;
-    text-align: center;
-    font-size: 100px;
-    display: inline;
+  color: #EE2A30;
+  font-family: 'Bangers', cursive;
+  font-weight: normal;
+  text-align: center;
+  font-size: 100px;
+  display: inline;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover h5 {
+  color: #EE2A30;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.page-logo img {
+  height: 100px;
+  width: auto;
+  padding-right: 10px;
+}
+
+#header-logo {
+  vertical-align: middle;
+  text-align: right;
+  justify-content: right;
+}
+
+#header-title {
+  vertical-align: middle;
+  text-align: left;
+  justify-content: left;
+  font-size: 100%;
+  padding-left: 0;
+}
+
+.bg-light {
+  background-color: #fff!important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#navbarLogo {
+  color: #EE2A30;
+  font-family: 'Bangers', cursive;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #EE2A30;
+}
+
+.dropdown-item {
+  color: #EE2A30;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #2D8DFF;
+}
+
+.dropdown-item.active {
+  color: #2D8DFF;
+}
+
+#menu-toggle {
+  color: #EE2A30;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #EE2A30;
+}
+
+#navbarSupportedContent span {
+  font-family: 'Montserrat', sans-serif;
+  color: #2D8DFF;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ---------- Below is styling for game info above game itself ---------- */
 .game-info-container {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 20px 0;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
 }
 
 .game-info {
-    color: #EE2A30;
-    font-size: 1.75em;
-    font-family: 'Montserrat', sans-serif;
+  color: #EE2A30;
+  font-size: 1.75em;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* ---------- Below is actual styling used for the game ----------*/
 .game-container {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    justify-content: center;
-    perspective: 500px;
-    background-color: rgba(0, 0, 0, 0);
-
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .card {
-    position: relative;
-    height: 175px;
-    width: 125px;
-    background-color: rgba(0, 0, 0, 0.0);
-    border: 0px;
+  position: relative;
+  height: 175px;
+  width: 125px;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 0px;
 }
 
 .card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    backface-visibility: hidden;
-    border-radius: 12px;
-    border-width: 2px;
-    border-style: solid;
-    transition: transform 500ms ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
 }
 
 .card.visible .card-back {
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
-    transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 .card.matched .card-value {
-    animation: dance 2s linear infinite 500ms;
-}
-
-.overlay-text {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    color: #EE2A30;
-    font-family: 'Bangers', cursive;
-    text-align: center;
-}
-
-.overlay-text-small {
-    font-size: 30px;
-}
-
-.overlay-text.visible {
-    display: flex;
-    flex-direction: column;
-    animation: overlay-grow 500ms forwards; 
-}
-
-@keyframes overlay-grow {
-    from {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
-    }
-    to {
-        background-color: rgba(0, 0, 0, 0.8);
-        font-size: 5em;
-    }
-}
-
-@keyframes dance {
-    0%, 100% {
-        transform: rotate();
-    }
-    25% {
-        transform: rotate(-15deg);
-    }
-    75% {
-        transform: rotate(15deg);
-    }
+  animation: dance 2s linear infinite 500ms;
 }
 
 .card-back {
-    background-color: #EE2A30;
-    border-color: #2D8DFF;
-    transform: rotateY(0);
+  background-color: #EE2A30;
+  border-color: #2D8DFF;
+  transform: rotateY(0);
 }
 
 .card-front {
-        background-color: #EE2A30;
-    border-color: #2D8DFF;
-    transform: rotateY(180deg);
+  background-color: #EE2A30;
+  border-color: #2D8DFF;
+  transform: rotateY(180deg);
 }
 
 .thief {
-    align-self: flex-start;
-    height: 100%;
-    width: auto;
-    transition: transform .2s ease-in;
+  align-self: flex-start;
+  height: 100%;
+  width: auto;
+  transition: transform .2s ease-in;
 }
 
 .card-value {
-    position: relative;
-    align-self: flex-start;
-    height: 100%;
-    width: auto;
-    transition: transform .2s ease-in;
+  position: relative;
+  align-self: flex-start;
+  height: 100%;
+  width: auto;
+  transition: transform .2s ease-in;
 }
 
 .card-back:hover .thief {
@@ -169,203 +214,168 @@ body {
   transform: scale(1.1);
 }
 
-.normal-body p {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+/* ---------- Below is styling for Overlays ----------*/
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #EE2A30;
+  font-family: 'Bangers', cursive;
+  text-align: center;
 }
 
+.overlay-text-small {
+  font-size: 30px;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 5em;
+  }
+}
+
+@keyframes dance {
+  0%,
+	100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+/* ---------- Below is styling for index page ---------- */
+.normal-body p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
 
 .about-card {
-    padding-bottom: 1px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  padding-bottom: 1px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .card-body h5 {
-    text-align: center;
-    color: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover h5 {
-    color: #EE2A30;
-}
-
-
-h1 {
-    color:#fff;
-    font-family: 'Bangers', cursive;
-    text-align: center;
-    margin: 30px 0 20px 0;
-}
-
-header {
-    width: 100%;
-    background-color: #fff;
-}
-
-.page-logo img {
-    height: 100px;
-    width: auto;
-    padding-right: 10px;
-}
-
-#header-logo {
-    vertical-align:middle; 
-    text-align:right;
-    justify-content: right;
-}
-
-#header-title {
-    vertical-align:middle; 
-    text-align:left;
-    align-items: left;
-    justify-content: left;
-    font-size: 100%;
-    padding-left: 0;
-}
-
-.bg-light {
-    background-color: #fff!important;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#navbarLogo {
-    color:#EE2A30;
-    font-family: 'Bangers', cursive;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #EE2A30;
-}
-
-.dropdown-item {
-    color: #EE2A30;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-    color: #2D8DFF;
-}
-
-.dropdown-item.active {
-    color: #2D8DFF;
-}
-
-#menu-toggle {
-    color: #EE2A30;
-}
-
-.navbar-light .navbar-toggler {
-    border-color: #EE2A30;
-}
-
-#navbarSupportedContent span {
-        font-family: 'Montserrat', sans-serif;
-        color: #2D8DFF;
-    }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+  text-align: center;
+  color: #fff;
 }
 
 .play-btn {
-    text-align: center;
+  text-align: center;
 }
 
 .play-btn button {
-    min-width: 104px;
-    margin-bottom: 4px;
+  min-width: 104px;
+  margin-bottom: 4px;
 }
 
 cite a {
-    margin-bottom: 20px;
-    color: rgb(147, 196, 255);
+  margin-bottom: 20px;
+  color: rgb(147, 196, 255);
 }
 
 .card-body {
-    min-height: 88px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
-    color:#fff;
-    font-family: 'Bangers', cursive;
-    padding-top: 50px;
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  padding-top: 50px;
 }
 
 h5 {
-    color: #ffffff;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
 
-
-.submit-btn{
-    background-color: #ffffff;
-    color: #2D8DFF;
-    text-align: center;
+/* ---------- Below is styling for contact page ---------- */
+.submit-btn {
+  background-color: #ffffff;
+  color: #2D8DFF;
+  text-align: center;
 }
 
 .submit-button {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-form{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 25px 25px 25px;
-    margin-bottom:  25px;
-    border-radius: 2%;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+form {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 5px 0px #ffffff;
+  padding: 25px 25px 25px;
+  margin-bottom: 25px;
+  border-radius: 2%;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .text-muted {
-    color: #EE2A30!important;
+  color: #EE2A30!important;
 }
 
 iframe {
     border-radius: 2%;
+    width: 100%; 
+    height: 480px;
 }
 
+/* ---------- Below are media rules for various elements throughout game/site ---------- */
 @media (max-width: 600px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .page-logo img {
-        height: 50px;
-        width: auto;
-        position: top;
-    }
-    .page-title {
-        font-size: 50px;
-    }
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-logo img {
+    height: 50px;
+    width: auto;
+  }
+
+  .page-title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 991px) {
-    #navbarSupportedContent span {
-        display: none;
-    }
+  #navbarSupportedContent span {
+    display: none;
+  }
 }

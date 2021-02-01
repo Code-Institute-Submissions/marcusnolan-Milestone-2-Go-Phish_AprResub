@@ -136,17 +136,14 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 ### Frameworks, Libraries and Programs Used
 
 - [Bootstrap v5.0](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as navigation bar.
-- [jquery](https://jquery.com/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
-- [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
-- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons and complement the design.
-- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Lato', 'Oswald' and 'Euphoria Script' fonts in the main.css stylesheet.
+- [jquery](https://jquery.com/) - jQuery was used to create elements of the game's functionality.
+- [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add the hamburger menu icon for tablet and smaller screens.
+- [Google Fonts](https://fonts.google.com/) - Google Fonts was used to import 'Bangers' and 'Montserrat' fonts in the main.css stylesheet.
 - [Git](https://git-scm.com/) - Git was used to allow for tracking of any changes in the code and for the version control.
 - [GitPod](https://www.gitpod.io/) - GitPod, connected to GitHub, hosted the coding space and allowed the projected to be committed to the Github repository.
 - [Github](https://github.com/) - GitHub is used to host the project files and publish the live website by using Git Pages.
-- [Illustrator](https://www.adobe.com/ie/products/illustrator.html) - Illustrator was used to create the Ian Kearney Coaching logo.
-- [Photoshop](https://www.adobe.com/ie/products/photoshop.html) - Photoshop was used to resize all the images used on the site.
-- [Balsamiq Wireframes](https://balsamiq.com/) - Balsamiq was used to create wireframes and mockups.
-- [Unsplash](https://tinyjpg.com/) - Unsplashwas used to download royalty free images for banner images on home, pricing and book a lesson pages.
+- [Photoshop](https://www.adobe.com/ie/products/photoshop.html) - Photoshop was used to resize all the images used on the site and design each card.
+- [Adobe XD](https://www.adobe.com/ie/products/xd.html) - Adobe XD was used to create wireframes and mockups.
 
 ## Testing
 
