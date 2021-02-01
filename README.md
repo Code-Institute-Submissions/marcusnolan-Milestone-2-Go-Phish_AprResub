@@ -151,13 +151,12 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 - #### Navigation bar
     - All links are working and have been tested.
     - The hamburger menu appears on screen sizes smaller than 992px. When clicked/tapped, it expands to reveal page links. These have been tested and are working as expected.
-- #### Footer
-    - All the social links are clicked, they open the relevant social media page in a new tab.
-    - When the 'Contact' icon is clicked, it opens the contact page.
-    - both navigation buttons for the carousel work on all devices. 
-- #### The home page image carousel
-    - Images change automatically with 5-second intervals.
-    - When the navigation buttons are clicked on, the image changes correctly and smoothly.
+- #### Home page (index)
+    - All play buttons work correctly and bring the user to the clicked difficulty level.
+    - All types of phishing cards are clickable and work correctly bringing the user to their desired section below.
+- #### Game
+    - All cards are clickable in each difficulty and flip accordingly.
+    - All overlays work correctly restarting the game when clicked or when the next difficulty is button on the victory overlay, it will bring the user to the harder level(except impossible as that is the hardest level).
 -  #### All external links were tested to make sure they open up the correct pages in new tabs
     - All social links in the footer bring the user to the relevant social channel home page. 
 - #### All internal links were tested to make sure that all pages are correctly connected 
@@ -168,19 +167,22 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />- Ian Kearney Coaching
+            alt="Valid CSS!" />- Go Phish
     </a> 
 
 ### HTML5 validator
 - Home & About - Pass 
-- Testimonials - Pass 
-- Pricing - Pass 
-- Book A Lesson - Pass 
-- Contact Me - Pass 
+- Game Easy - Pass 
+- Game Medium - Pass 
+- Game Hard - Pass 
+- Game Impossible - Pass 
+- How To Play - Pass
+- Contact - Pass
 
 ### Usability Testing
 - To test the ease of navigation, legibility, layout of content etc, this website was shared with few friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating or ease of reading or viewing content the website.
 - The testers also clicked all links on a variety of devices and browsers and all came back working correctly. 
+- Only 1 small glitch was noticed. See the "Known Bugs" section below
 
 ### Compatibility Testing
 - Browser Compatibility on mobile, tablet and desktop;
@@ -189,8 +191,8 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     - Firefox - successfull 
     - Opera - successfull 
 
-- OS Compatibility was tested on iOS 14.0.1, Android 11.0, MacOS Catalina 10.15.7, iPadOS 14.1 and Windows 10. 
-- The devices used in this testing include Macbook Pro Retina, Dell laptop, iPad Air, iPhone 8 Plus, iPhone 6s, samsung s9 and other android mobile phones.
+- OS Compatibility was tested on iOS 14.3, Android 11.0, MacOS Catalina 10.15.7, iPadOS 14.1 and Windows 10. 
+- The devices used in this testing include Macbook Pro Retina, Dell laptop, iPad Pro, iPhone 12 Pro Max, iPhone 6s, samsung s9 and other android mobile phones.
 
 
 ### Performance Testing
