@@ -122,7 +122,7 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     ### Future Features
  
     - In the future, I would like to implement a leaderboard where users can proudly show their scores on a live leaderboard viewable to everyone. 
-    - I would also like to add a shuffl function after a certain amount of clicks. 
+    - I would also like to add a shuffle function after a certain amount of clicks. 
 
 
 ## Technologies Used
@@ -131,10 +131,11 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs Used
 
-- [Bootstrap v4.5.3](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as image carousel, navigation bar and footer.
+- [Bootstrap v5.0](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as navigation bar.
 - [jquery](https://jquery.com/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
 - [popper.js](https://popper.js.org/) - Used in some of the clickable elements such as collapsable 'hamburger' nav bar.
 - [Font Awesome](https://fontawesome.com/) - Font Awesome was used to add social icons and complement the design.
