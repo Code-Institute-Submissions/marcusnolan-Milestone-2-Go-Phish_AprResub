@@ -1,7 +1,7 @@
 <h1 align="center">Go Phish</h1>
 <h1 align="center"><img src="./assets/images/readme/go-phish-mock1.png"/></h1>
 
-<a href="https://marcusnolan.github.io/Milestone-2-Go-Phish/"><img src="./assets/images/cyber-thief-blue logo.png" width="25px"/> : Go Phish Live Website</a>
+<a href="https://marcusnolan.github.io/Milestone-2-Go-Phish/"><img src="./assets/images/cyber-thief-blue-logo.png" width="25px"/> : Go Phish Live Website</a>
 
 <a href="https://github.com/marcusnolan/Milestone-2-Go-Phish"><img src="./assets/images/readme/github-logo.png" width="25px"/> : Go Phish Github Repository</a>
 
@@ -119,11 +119,11 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     - Google Maps was added with a funny/false location of a fish market in Denmark with the name "Go Fish".
 
 
-    ### Future Features
- 
-    - In the future, I would like to implement a leaderboard where users can proudly show their scores on a live leaderboard viewable to everyone. 
-    - I would also like to add a shuffle function after a certain amount of clicks. 
+### Future Features
+- In the future, I would like to implement a leaderboard where users can proudly show their scores on a live leaderboard viewable to everyone. 
+- I would also like to add a shuffle function after a certain amount of clicks. 
 
+<h1 align="center"><img src="./assets/images/readme/go-phish-mock3.jpg"/></h1>
 
 ## Technologies Used
 
