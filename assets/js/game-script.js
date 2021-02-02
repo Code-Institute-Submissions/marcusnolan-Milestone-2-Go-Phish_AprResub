@@ -1,3 +1,4 @@
+// ---------- Game Javascript below was written with help from a tutorial by PortEXE on YouTube ----------
 class GoPhish {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -6,6 +7,8 @@ class GoPhish {
         this.timer = document.getElementById('time-remaining');
         this.ticker = document.getElementById('flips');
     }
+
+    //---------- start game conditions set below ---------
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -28,6 +31,8 @@ class GoPhish {
             card.classList.remove('matched');
         });
     }
+
+    //---------- flipping function below ---------
     flipCard(card) {
         if (this.canFlipCard(card)) {
             this.totalClicks++;
@@ -40,6 +45,8 @@ class GoPhish {
                 this.cardToCheck = card;
         }
     }
+
+    //---------- matching functions below ---------
     checkForCardMatch(card) {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -77,6 +84,8 @@ class GoPhish {
                 this.gameOver();
         }, 1000);
     }
+
+    //---------- Script for overlays below ---------
     gameOver() {
         clearInterval(this.countDown);
         document.getElementById('game-over-text').classList.add('visible');
@@ -87,6 +96,7 @@ class GoPhish {
         document.getElementById('victory-text').classList.add('visible');
     }
 
+    //---------- Fisher-yates shuffle algorithm below ---------
     shuffleCards() {
         for (let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i + 1));
@@ -104,6 +114,8 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let difficulty = (document.getElementById('difficulty').textContent);
+
+    //---------- JS below was written bymyself with help from my mentor so that there is one script for all difficulties instead of one each ---------
     let game;
     if (difficulty === 'Easy') {
         game = new GoPhish(40, cards);

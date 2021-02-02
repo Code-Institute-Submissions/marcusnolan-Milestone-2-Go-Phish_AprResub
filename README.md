@@ -179,6 +179,10 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 - How To Play - No errors or warnings 
 - Contact - No errors or warnings 
 
+### JSHint
+- Both scripts were passed throrugh JSHint with no errors. 
+- Both had warnings but only to do with ES6 e.g "'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." 
+
 ### Usability Testing
 - To test the ease of navigation, legibility, layout of content etc, this website was shared with few friends and family of different ages and different levels of computer/smart device knowledge. There were no issues identified regarding the simplicity of navigating or ease of reading or viewing content the website.
 - The testers also clicked all links on a variety of devices and browsers and all came back working correctly. 
@@ -231,28 +235,30 @@ If you wish to clone or download this repository to your local device you can fo
 ## Bugs
 ### Fixed Bugs
 - While building the game with help from a different tutorial, I encountered a few bugs with the shuffle function and cards flipping correctly so I decided to go a completely different method and changed my shuffle function to the Fisher-Yates algorithm. 
-- 
+- Overlay's were being made viible after anywhere on the game screen was clicked. order of code was incorrect and "click to restart" function was showing overlays instead. All was fixed very simply. 
+
+### Ongoing Bugs
+- A glitch has been noted on mobile when flipping cards. The card above the clicked card will glitch for a millisecond when clicking another card. It does not affect the game or show the user what is on the other side of the card apart from being slightly distracting. 
+- Slight bit of horizontal overflow but only on screens less than 194px. 
 
 ## Credits
 
 ### Code
-- Bootstrap library was used to create a responsive design and create form, modal, navbar, footer, card, and image carousel elements.
+- The game was created with help from 2 brilliant tutorials on YoutTube by [WebDevSimplified](https://www.youtube.com/watch?v=28VfzEiJgy4) and [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=3028s). WebDev does the first part with HTML and CSS before handing it off to PortEXE for the Javascript. 
+- Bootstrap library was used to create a responsive design and create form, navbar and card elements.
 
 ### Content 
-- All code was written by myself, Marcus Nolan. 
 - Writing up the README file;
     - I viewed the code institute [sample readme](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive). 
     - I used the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code). 
     - I also got insperation from other students within the slack channel for user centric front end development and peer reviews. 
-- The content itself was either written by myself, got directly from Ian Kearney or from the [Dromoland Castle Golf website](https://www.dromoland.ie/golf/golf-pro-coaching/)
-- All testimonials are from Ian Kearney's [ast clients but feature a different name and avatar on the site.]
+- The content itself was either written by me or got from one of two pages, [CSO Online](https://www.csoonline.com/article/2117843/what-is-phishing-how-this-cyber-attack-works-and-how-to-prevent-it.html) is where I got the brief summary of what Phishing is and [The State Of Security](https://www.tripwire.com/state-of-security/security-awareness/6-common-phishing-attacks-and-how-to-protect-against-them/) is where I got the information on each type of Phishing. Both were used on the home page.
 
 ### Media 
-- All images featuring Ian Kearney were sent by him or screenshotted frames from a [promotional video](https://www.youtube.com/watch?v=7r0gJoqnmLs) for golf in Dromoland Castle.
-- One of 3 banner images on the home page carousel and the banner images from the pricing and book a lesson pages were downloaded from [Unsplash](https://unsplash.com/)
-- The logo was designed by myself, Marcus Nolan.
+- The main logo I purchased from Vector Stock and tweaked myself using photoshop [VectorStock](https://www.vectorstock.com/royalty-free-vector/thief-hacking-a-computer-icon-cyber-attack-vector-21584120?refer=eml).
+- The blue cartoon fish I got from  [Web Stock Review](https://webstockreview.net/pict/getfirst) and again tweaked myslef using photoshop to create the 6 different cards.
 
 ### Acknowledgements
-- I have to thank Ian Kearney and all the team from Dromoland Castle for being so helpful and letting me use their content and brand for the site. 
+- I have to thank WenDevSimplified and PortEXE in particular for making the tutorial very fun and easy to follow. Of course the reason it was easy is due to the great content in the modules I have studied previously with The Code Intitute. 
 - Thank you to everyone who took their time to provide me constructive feedback on the Slack community page and of course my friends and family.
-- Big thanks to my mentor for putting up with my questions and giving me great insights.
+- Big thanks to my mentor for putting up with my many questions, giving me great insights and really going above and beyond their position to help me.

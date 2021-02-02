@@ -1,3 +1,4 @@
+//---------- Below JS was written with guidance from emailJS tutorial if Interactive Frontend module ---------
 function sendMail(contactForm) {
     emailjs.send("service_oev3go2","go-phish", {
         "from_name": contactForm.name.value,
@@ -16,7 +17,7 @@ function sendMail(contactForm) {
         return false;
 }
 
-// code below written with help from W3 schools
+// ---------- code below written with help from W3 schools ----------
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("navbar");
