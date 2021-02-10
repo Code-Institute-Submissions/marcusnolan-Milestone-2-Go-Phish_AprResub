@@ -120,9 +120,9 @@ function ready() {
     if (difficulty === 'Easy') {
         game = new GoPhish(40, cards);
     } else if (difficulty === 'Medium') {
-        game = new GoPhish(20, cards);
+        game = new GoPhish(30, cards);
     } else if (difficulty === 'Hard') {
-        game = new GoPhish(15, cards);
+        game = new GoPhish(20, cards);
     } else if (difficulty === 'Impossible') {
         game = new GoPhish(10, cards);
     }

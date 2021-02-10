@@ -385,3 +385,9 @@ iframe {
         display: none;
     }
 }
+
+@media (min-width: 991px) {
+  #navbarLogo {
+      display: none;
+  }
+}

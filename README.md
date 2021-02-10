@@ -71,7 +71,7 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     - The logo was bought off <a href="https://www.vectorstock.com/royalty-free-vector/thief-hacking-a-computer-icon-cyber-attack-vector-21584120?refer=eml">Vector stock</a> and I made a few tweaks using Adobe Photoshop. 
     - The Cartoon fish used was downloaded off <a href="https://webstockreview.net/pict/getfirst">Web Stock Review</a> and all edits were made by me using Adobe Photoshop. 
 - #### Wireframes/Mockups
-    - Wireframes and mockups were created using Adobe XD. Both mobile and desktop versions are linked below;
+    - The mockup images seen above and below were created using <a href="http://ami.responsivedesign.is/">Am I Responsive</a> and <a href="https://magicmockups.com/">Magic Mockups</a>. Wireframes were created using Adobe XD. Both mobile and desktop versions are linked below;
         
         - <a href="./assets/images/readme/wireframes/go-phish-index-wireframe.png"> Home & About</a>
         - <a href="./assets/images/readme/wireframes/go-phish-index-wireframe-mobile.png"> Home & About - Mobile</a>
