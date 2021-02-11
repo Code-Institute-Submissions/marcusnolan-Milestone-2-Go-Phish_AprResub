@@ -19,7 +19,7 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 
 **[Deployment](#deployment)**
 
-**[Known Bugs](#known-bugs)**
+**[Bugs](#bugs)**
 
 **[Credits](#credits)**
 
@@ -236,6 +236,7 @@ If you wish to clone or download this repository to your local device you can fo
 ### Fixed Bugs
 - While building the game with help from a different tutorial, I encountered a few bugs with the shuffle function and cards flipping correctly so I decided to go a completely different method and changed my shuffle function to the Fisher-Yates algorithm. 
 - Overlays were being made visible after anywhere on the game screen was clicked. order of code was incorrect and the "click to restart" function was showing overlays instead. All was fixed very simply. 
+- The original cards used for the types of phishing images on the home page had a button which was supposed to open an accordion of information as well as bring the user down to that section, however, the content was too big for the accordion and also the text within the button was too small to read on mobile seen as I wanted to have minimum of 2 cards beside each other on mobile to reduce scrolling. The buttons were removed and the entire card is now clickable making it much easier for the user. 
 
 ### Ongoing Bugs
 - A glitch has been noted on mobile when flipping cards. The card above the clicked card will glitch for a millisecond when clicking another card. It does not affect the game or show the user what is on the other side of the card apart from being slightly distracting. 
