@@ -9,7 +9,7 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             alert("Thanks for contacting Go Phish! We'll be in touch soon.");
-            window.location.replace("/");
+            window.location.replace("/Milestone-2-Go-Phish/");
         },
         function(error) {
             alert("Whoops! Please try again.");
