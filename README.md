@@ -179,6 +179,43 @@ Go Phish is a card memory game created to educate people about the ongoing threa
 - How To Play - No errors or warnings 
 - Contact - No errors or warnings 
 
+### Testing User Stories form User Experience (UX) section
+- #### As a general user;
+    1. I want to be informed about phishing and the various types of phishing.
+        - Upon entering the site, the different types of phishing and their explanations are on the home page with a convenient deck of clickable illustrations of each type to expand more information. 
+    2. I want to intuitively navigate through the site to browse the content.
+        - There is a clean, east o use navigation bar at the top that smoothly collapses to a menu for mobile and tablet devices. 
+    1. I want to enjoy the design and for it to add to the overall feel of a game.
+        - There are nice bright colours with happy icons that envoke a feeling of joy. 
+    1. I want to learn how to play the game with ease.
+        - The How to Play page is simple and concise. it is easy to digest and understand the relevant information without getting lost in unecessary paragraphs full of padding. 
+    1. I want to find a variety of difficulties to test my memory.
+        - The game features 4 different levels of difficulty guaranteed to challenge all players. 
+    1. I want to be able to keep track of the number of flips it has taken me to complete the game.
+        - The flip counter instantly counts and displays the number of flips a user has completed
+    1. see how long I have left to complete the game.
+        - Similar to the flip counter, the countdown timer lets the user know how long they have left.
+- #### As a casual player;
+    1. I want to have fun when playing go phish.
+        - Although a very simple game, it is a timeless classic that is very easily enjoyed. 
+    1. I want the game itself to be easy to comprehend and play.
+        - The easy level of the game gives 40 seconds to complete which is more than enough even for older aged children as well as using simple language to explain the instructions and how to play. 
+    1. I want to be able to casually flip between levels and pages with a simple to use navigation.  
+        - On every page of the site, the play dropdown of the navigation bar features each level. 
+        - Also, once you complete a level, you are cleverly urged to move to the next level with a putton on the overlay. 
+- #### As an experienced gamer;
+    1. I want to be able to test my abilities with a variety of difficulties.
+        - The game features 4 different levels of difficulty guaranteed to challenge all levels of experienced players.
+    1. I want to be encouraged to play again and again.
+        - Once the a player wins or fails the game, they are prompted to restart or move to another level. 
+- #### As the game developer;
+    1. I want to educate people while also ensuring they enjoy the game and have fun.
+        - I received very good back from people I shared the site with for testing that it was easy to understand and that they never realised what phishing was and the different types. 
+    1. I want to provide very easy to use navigation and game controls.    
+        - The Navigation bar is always accesible and very simple to use. you are never more than 2 clicks away from your desired page. 
+    1. I want to have a light-hearted and colorful design for players to enjoy.
+        - The bright, contrasting colours give a warm fun feeling that players can enjoy. 
+
 ### JSHint
 - Both scripts were passed through JSHint with no errors. 
 - Both had warnings but only to do with ES6 e.g "'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." 
@@ -209,6 +246,15 @@ Go Phish is a card memory game created to educate people about the ongoing threa
     - How To Play - [Results](https://www.webpagetest.org/result/210201_DiR2_992a1e3c5837f5ac20f2512024dcdf66/)
     - Contact - [Results](https://www.webpagetest.org/result/210201_DiET_ad8f21d8c7c907e48e93e72867be5f35/)
 
+### Fixed Bugs
+- While building the game with help from a different tutorial, I encountered a few bugs with the shuffle function and cards flipping correctly so I decided to go a completely different method and changed my shuffle function to the Fisher-Yates algorithm. 
+- Overlays were being made visible after anywhere on the game screen was clicked. order of code was incorrect and the "click to restart" function was showing overlays instead. All was fixed very simply. 
+- The original cards used for the types of phishing images on the home page had a button which was supposed to open an accordion of information as well as bring the user down to that section, however, the content was too big for the accordion and also the text within the button was too small to read on mobile seen as I wanted to have minimum of 2 cards beside each other on mobile to reduce scrolling. The buttons were removed and the entire card is now clickable making it much easier for the user. 
+
+### Ongoing Bugs
+- A glitch has been noted on mobile when flipping cards. The card above the clicked card will glitch for a millisecond when clicking another card. It does not affect the game or show the user what is on the other side of the card apart from being slightly distracting. 
+- Slight bit of horizontal overflow but only on screens less than 194px. 
+
 ## Deployment 
 
 ### Publishing the site
@@ -231,16 +277,6 @@ If you wish to clone or download this repository to your local device you can fo
 5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
 6. Type `Git Clone` and paste the URL you copied from GitHub.
 7. To create your local clone press `Enter`
-
-## Bugs
-### Fixed Bugs
-- While building the game with help from a different tutorial, I encountered a few bugs with the shuffle function and cards flipping correctly so I decided to go a completely different method and changed my shuffle function to the Fisher-Yates algorithm. 
-- Overlays were being made visible after anywhere on the game screen was clicked. order of code was incorrect and the "click to restart" function was showing overlays instead. All was fixed very simply. 
-- The original cards used for the types of phishing images on the home page had a button which was supposed to open an accordion of information as well as bring the user down to that section, however, the content was too big for the accordion and also the text within the button was too small to read on mobile seen as I wanted to have minimum of 2 cards beside each other on mobile to reduce scrolling. The buttons were removed and the entire card is now clickable making it much easier for the user. 
-
-### Ongoing Bugs
-- A glitch has been noted on mobile when flipping cards. The card above the clicked card will glitch for a millisecond when clicking another card. It does not affect the game or show the user what is on the other side of the card apart from being slightly distracting. 
-- Slight bit of horizontal overflow but only on screens less than 194px. 
 
 ## Credits
 
